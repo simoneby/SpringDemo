@@ -14,8 +14,8 @@
 		<org.aspectj-version>1.8.1</org.aspectj-version>
 	</properties>
 
-
 	<dependencies>
+
 		<!-- Spring -->
 		<dependency>
 			<groupId>org.springframework</groupId>
