@@ -2,11 +2,15 @@
 <ApplicationInsights xmlns="http://schemas.microsoft.com/ApplicationInsights/2013/Settings" schemaVersion="2014-05-30">
 
     <!-- The key from the portal: -->
-    <InstrumentationKey>InstrumentationKey=56b492ec-15d3-4f5f-9fb5-ecfe3e049bf2</InstrumentationKey>
+    <InstrumentationKey>601cc7c0-28dc-4e64-bb22-ee431e623d38</InstrumentationKey>
+    <RoleName>Tom the Turtle</RoleName>
 
     <!-- HTTP request component (not required for bare API) -->
     <TelemetryModules>
-        <Add type="com.microsoft.applicationinsights.web.extensibility.modules.WebRequestTrackingTelemetryModule"/>
+        <Add type="com.microsoft.applicationinsights.web.extensibility.modules.WebRequestTrackingTelemetryModule">
+            <Param name = "W3CEnabled" value ="true"/>
+            <Param name ="enableW3CBackCompat" value = "true" />
+        </Add>
         <Add type="com.microsoft.applicationinsights.web.extensibility.modules.WebSessionTrackingTelemetryModule"/>
         <Add type="com.microsoft.applicationinsights.web.extensibility.modules.WebUserTrackingTelemetryModule"/>
     </TelemetryModules>

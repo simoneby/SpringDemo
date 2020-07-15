@@ -8,7 +8,7 @@ public class SimpleControllerRevisited {
 
 	@GetMapping(path="/simple/revisited", headers="Accept=text/plain")
 	public String simple() {
-		return "Hello world revisited!";
+		return Ping.sendRequest2();
 	}
 
 }
