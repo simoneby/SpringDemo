@@ -1,2 +1,2 @@
 --exec
--javaagent:C:\Users\Standardbruker\Documents\SpringDemo\applicationinsights-agent-2.6.1.jar
+-javaagent:javaagent/applicationinsights-agent-3.0.0-PREVIEW.5.jar
