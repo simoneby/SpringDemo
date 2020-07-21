@@ -2,8 +2,8 @@
 <ApplicationInsights xmlns="http://schemas.microsoft.com/ApplicationInsights/2013/Settings" schemaVersion="2014-05-30">
 
     <!-- The key from the portal: -->
-    <InstrumentationKey>601cc7c0-28dc-4e64-bb22-ee431e623d38</InstrumentationKey>
-    <RoleName>Tom the Turtle</RoleName>
+    <InstrumentationKey>012e9ce5-1bd2-4ec7-bfa3-a05f3581688f</InstrumentationKey>
+    <RoleName>Bart the Bunny</RoleName>
 
     <!-- HTTP request component (not required for bare API) -->
     <TelemetryModules>
