@@ -13,9 +13,9 @@ public class Ping {
 
 
     public static String sendRequest(){
-        String requestURL = "http://46.101.166.115:8080/spring-mvc-showcase/simple";
+        String requestURL = "https://signicat.statuspage.io/api/v2/status.json";
         URL wikiRequest = null;
-        String response = "request failed";
+        String response = "failed to retrieve status of signicat";
         try {
             wikiRequest = new URL(requestURL);
             URLConnection connection = wikiRequest.openConnection();
@@ -29,13 +29,13 @@ public class Ping {
             e.printStackTrace();
         }
 
-        return response + ": same application key";
+        return "Status of signicat: " + response;
     }
 
     public static String sendRequest2(){
-        String requestURL = "http://178.62.31.191:8080/spring-mvc-showcase/simple";
+        String requestURL = "http://164.90.213.129:8081/demo/all";
         URL wikiRequest = null;
-        String response = "request failed";
+        String response = "Failed to retrieve all users in database";
         try {
             wikiRequest = new URL(requestURL);
             URLConnection connection = wikiRequest.openConnection();
@@ -49,6 +49,6 @@ public class Ping {
             e.printStackTrace();
         }
 
-        return response + ": different application key";
+        return "Status of users in database:" + response;
     }
 }
